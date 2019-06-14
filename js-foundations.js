@@ -53,12 +53,3 @@ const mult5 = (arr) => {
     return arr.map(value => value * 5)
 }
 console.log(mult5(fiveNum))
-
-var text = 'outside'
-function logIt(){
-    console.log(text)
-    var text = 'inside'
-}
-
-logIt()
-logIt()

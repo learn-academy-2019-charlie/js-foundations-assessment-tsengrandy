@@ -58,11 +58,14 @@ function logIt(){
 
 logIt()
 ```
-'outside'
-It logs text before it's reassigned to 'inside'. If run again, it should show 'inside' now though.
+undefined 
+JS hoists var text = 'inside' to the top of the block but does not assign the value to it yet, so it's initialized as undefined and logged as undefined first before we assign the value 'inside' to it.
+
 
 2. What is JSON? How does it relate to javascript objects?
-JSON is javascript object notation. It helps move the objects in JS easily
+JSON is javascript object notation. It is a text format that makes it easy to transfer data such as JS objects.
 
 3. Describe a closure, what is it good for and how do you recognize one?
-No idea
+A closure is a function that has access to an outer function's variables.
+It's good for hiding variable you don't want the user to be able to see.
+You recognize it whenever there is a function within another function.
